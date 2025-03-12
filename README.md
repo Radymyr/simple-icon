@@ -39,7 +39,7 @@ const { generateIcon } = require('simple-icon');
 
 async function run() {
   try {
-    const output = await generateIcon('test.png', { size: 128, output: './icons', format: 'jpg' });
+    const output = await generateIcon('test.png', 64);
     console.log(`Icon created: ${output}`);
   } catch (error) {
     console.error(error.message);
